@@ -35,5 +35,7 @@ public class JedisKeyTest {
         transaction.set("key4","value4");
         transaction.exec();
         transaction.discard();
+        
+        System.out.println("我来测试一下远程Git的pull");
     }
 }
