@@ -14,7 +14,7 @@ public class JedisKeyTest {
         String user = jedis.get("user");
         System.out.println(user);
 
-        Set<String> keys = jedis.keys("*");
+        Set<String> keys = jedis.keys("*");    //在java中使用Redis指令
         for(String key : keys){
             System.out.println(key + ":" + jedis.get(key));
         }
