@@ -28,7 +28,7 @@ public class JedisKeyTest {
             System.out.println(key + ":" + jedis.get(key));
         }
 
-        Transaction transaction = jedis.multi();
+        Transaction transaction = jedis.multi();    //开启Redis的事务管理功能
         transaction.set("key1","value1");
         transaction.set("key2","value2");
         transaction.set("key3","value3");
