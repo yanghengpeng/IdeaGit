@@ -7,7 +7,7 @@ import java.util.Set;
 
 public class JedisKeyTest {
     public static void main(String[] args) {
-        Jedis jedis = new Jedis("192.168.32.130",6379);
+        Jedis jedis = new Jedis("192.168.32.130",6379);   //连接Redis服务器
         String ping = jedis.ping();
         System.out.println(ping);
 
